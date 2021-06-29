@@ -1,10 +1,13 @@
 lista = list()
 
 while True:
-    newNum = int(input('Digite um número (0 para parar): '))
-    if newNum == 0:
+    novoNum = int(input('Digite um número (0 para parar): '))
+    if novoNum == 0:
         break
-    if newNum in lista:
-        print('O número digitado já foi adicionado.')
+    if novoNum in lista:
+        print('O número digitado já foi adicionado à lista, digite outro número. ')
     else:
-        lista.append(newNum)
+        print('Valor adicionado à lista!')
+        lista.append(novoNum)
+print('•'*50)
+print(f'Você digitou os números {sorted(lista)}')
